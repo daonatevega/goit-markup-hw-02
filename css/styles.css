@@ -1,10 +1,12 @@
 :root{
-    --primary-color:  rgba(33, 150, 243, 1);
-    --title-color:    rgba(33, 33, 33, 1);
-    --paragraph-color:rgba(117, 117, 117, 1);
-    --footer-color:   rgba(255, 255, 255, 0.6);
-    --text-main:      rgba(255, 255, 255, 1);
-    --button-main   : rgba(245, 244, 250, 1);
+    --primary-color:    rgba(33, 150, 243, 1);
+    --title-color:      rgba(33, 33, 33, 1);
+    --paragraph-color:  rgba(117, 117, 117, 1);
+    --footer-color:     rgba(255, 255, 255, 0.6);
+    --text-main:        rgba(255, 255, 255, 1);
+    --button-main   :   rgba(245, 244, 250, 1);
+    --background-color: rgba(47, 48, 58, 1);
+
 
 }
 
@@ -35,7 +37,7 @@ body{
     width: 696px;
     font-size: 44px;
     font-weight: 900;
-    line-height: 1.2;
+    line-height: 3.75rem;
     font-style: normal;
 }
 
@@ -78,7 +80,11 @@ body{
     font-style: normal;
 }
 
-.custom-item-list:hover,:visited{
+.custom-item-list:hover{
+    color: var(--primary-color);
+}
+
+.visited-page:visited{
     color: var(--primary-color);
 }
 
@@ -124,13 +130,13 @@ body{
     background-color: var(--primary-color);
     cursor: pointer;
     border: none;
-    width: 197;
+    width: 197px;
     font-size: 16px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.875rem;
 }
 
-/*Color boton pagina portafolio*/
+/*Color botones de la pagina portafolio*/
 .button-main-nav{
     color: var(--title-color);
     background-color: var(--button-main);
@@ -163,4 +169,22 @@ body{
     font-weight: 400;
     line-height: 1.2;
     font-style: normal;
+}
+
+/* Imagen de fondo de la seccion del texto y boton principal*/
+.background-text-main{
+    background-image: url('../img/Main-text-bg-studio.jpg');
+    background-color: var(--background-color);
+}
+
+/* Imagen de fondo de la seccion del texto del pie de pagina - pagina estudio*/
+.background-text-footer-studio{
+    background-image: url('../img/Footer-bg-studio.jpg');
+    background-color: var(--background-color);
+}
+
+/* Imagen de fondo de la seccion del texto del pie de pagina - pagina portafolio*/
+.background-text-footer-briefcase{
+    background-image: url('../img/Footer-bg-briefcase.jpg');
+    background-color: var(--background-color);
 }
